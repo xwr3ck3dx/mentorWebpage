@@ -29,6 +29,7 @@ a{
     background: transparent;
     
 }
+
 .header-top .nav-top{
     background: transparent!important
 }
@@ -140,6 +141,28 @@ ul.rightMainNav li a:hover{
     color:white;
     text-transform: uppercase;
     position: relative;
+}
+#searchbarTop .input-field .prefix{
+    width:0rem!important;
+    top:.4rem;
+    left: 0.8rem;
+    font-size:1.5rem;
+    color: #077A9C;
+    
+}
+#searchbarTop .input-field{
+    height:30px;
+    margin-top:10px;
+    margin-bottom: 0;
+    background: white;
+}
+#searchbarTop .input-field input{
+    height:30px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    background: white;
+    border-bottom:none!important;
+    padding-left: 20px
 }
 /* Header End */
 .carouselmain .indicators{
@@ -498,4 +521,77 @@ a.middle-indicator-text{
 .footer .info{
     text-align: center;
     color: rgba(255, 255, 255, 0.25)
+}
+
+
+
+/* Category Page */
+.categoryProducts{
+    margin:20px 0px 50px!important;
+}
+.categoryTitle{
+    
+    font-size:3rem;
+    margin-bottom:20px;
+    position: relative;
+    z-index: 1;
+}
+.categoryTitle:before{
+    border-top:2px solid #dfdfdf;
+    content :"";
+    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:95%;
+    z-index: -1;
+}
+.categoryTitle span{
+    background: rgb(246, 246, 246);
+    padding:20px;
+}
+.newCategoryShowcase{
+    padding: 0 35px;
+    margin-bottom: 35px!important;
+}
+.newCategoryShowcase .col.s2{
+    width:20%!important;
+    padding: 0 20px
+}
+
+/* Product Details page */
+.productDetails{
+  
+    margin:50px 0px 20px;
+}
+/* .productDetails{
+  margin-top:100px;
+  margin-bottom: 100px;;
+  
+    
+} */
+.mainProductDiv{
+    padding:30px 70px;
+}
+.productDetail .productTitle{
+    font-size: 2.5em;
+    
+}
+.productDetail .productBrand{
+    font-size: 2em;
+   
+}
+.productDetail .productId{
+    font-size: 2em;
+}
+.productDetail .productDescription{
+    font-size: 1.5em;
+}
+.productDetail{
+  
+}
+.relatedProducts{
+    margin-bottom: 50px
 }
