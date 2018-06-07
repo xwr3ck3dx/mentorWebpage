@@ -105,9 +105,11 @@ a{
     margin-top:-25px
 }
 img.mainLogo{
-    max-height: 73px;
-    vertical-align: middle;
-    margin-left: 25px
+    max-height: 65px;
+   
+    /* margin-left: 25px */
+    margin:0 auto;
+    display: block
 }
 .rightMainNav{
     display: inline-block;
