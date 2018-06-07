@@ -96,14 +96,70 @@
         <div class="options">
             <div class="row">
                 <div class="col s6">
-                    <ul class="optionsgroup">
-                        <li class="optionsgroupitem"><a href="category.html"><span>Primary Care</span></a></li>
-                        <li class="optionsgroupitem"><span>Primary Care</span></li>
-                        <li class="optionsgroupitem"><span>Primary Care</span></li>
-                        <li class="optionsgroupitem"><span>Primary Care</span></li>
-                        <li class="optionsgroupitem"><span>Primary Care</span></li>
-                        <li class="optionsgroupitem"><span>Primary Care</span></li>
-                        <li class="optionsgroupitem"><span>Primary Care</span></li>
+                    <ul class="optionsgroup collapsible">
+                        <li class="optionsgroupitem">
+                            <div class="collapsible-header"><span>Primary Care</span></div>
+                            <ul class="collapsible-body">
+                                <li><a href="category.html">option 1</a>  </li>
+                                <li><a href="">option 2</a>  </li>
+                                <li><a href="">option 3</a>  </li>
+                                <li><a href="">option 4</a>  </li>
+                            </ul>
+                        </li>
+                        <li class="optionsgroupitem">
+                                <div class="collapsible-header"><span>Primary Care</span></div>
+                                <ul class="collapsible-body">
+                                    <li><a href="">option 1</a>  </li>
+                                    <li><a href="">option 2</a>  </li>
+                                    <li><a href="">option 3</a>  </li>
+                                    <li><a href="">option 4</a>  </li>
+                                </ul>
+                        </li>
+                        <li class="optionsgroupitem">
+                                <div class="collapsible-header"><span>Primary Care</span></div>
+                                <ul class="collapsible-body">
+                                    <li><a href="">option 1</a>  </li>
+                                    <li><a href="">option 2</a>  </li>
+                                    <li><a href="">option 3</a>  </li>
+                                    <li><a href="">option 4</a>  </li>
+                                </ul>
+                        </li>
+                        <li class="optionsgroupitem">
+                                <div class="collapsible-header"><span>Primary Care</span></div>
+                                <ul class="collapsible-body">
+                                    <li><a href="">option 1</a>  </li>
+                                    <li><a href="">option 2</a>  </li>
+                                    <li><a href="">option 3</a>  </li>
+                                    <li><a href="">option 4</a>  </li>
+                                </ul>
+                        </li>
+                        <li class="optionsgroupitem">
+                                <div class="collapsible-header"><span>Primary Care</span></div>
+                                <ul class="collapsible-body">
+                                    <li><a href="">option 1</a>  </li>
+                                    <li><a href="">option 2</a>  </li>
+                                    <li><a href="">option 3</a>  </li>
+                                    <li><a href="">option 4</a>  </li>
+                                </ul>
+                        </li>
+                        <li class="optionsgroupitem">
+                                <div class="collapsible-header"><span>Primary Care</span></div>
+                                <ul class="collapsible-body">
+                                    <li><a href="">option 1</a>  </li>
+                                    <li><a href="">option 2</a>  </li>
+                                    <li><a href="">option 3</a>  </li>
+                                    <li><a href="">option 4</a>  </li>
+                                </ul>
+                        </li>
+                        <li class="optionsgroupitem">
+                                <div class="collapsible-header"><span>Primary Care</span></div>
+                                <ul class="collapsible-body">
+                                    <li><a href="">option 1</a>  </li>
+                                    <li><a href="">option 2</a>  </li>
+                                    <li><a href="">option 3</a>  </li>
+                                    <li><a href="">option 4</a>  </li>
+                                </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="col s6">
@@ -222,7 +278,7 @@
         </div>
         <!-- New Product tag ends here -->
         <!-- New Trends tag opens Here -->
-        <div class="newTrends">
+        <!-- <div class="newTrends">
             <h2 class="background titleText"><span>New Trends</span></h2>
             <div class="trendShowcase row">
                 <div class="col s3">
@@ -270,10 +326,10 @@
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- New Trends tag ends here -->
         <!-- E-magazine tag starts here -->
-        <div class="magazine">
+        <!-- <div class="magazine">
             <h2 class="background titleText"><span>E-Magazine</span></h2>
             <div class="magazineShowcase row">
                 <div class="col s6">
@@ -301,7 +357,7 @@
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- E-magazine tag ends here -->
         <!-- Terms apply text here -->
         <div class="termsApply">
@@ -383,6 +439,7 @@
 
     <script>
         $(document).ready(function(){
+            $('.collapsible').collapsible();
             $(".dropdown-trigger").dropdown();
             $(".carousel.brandcarousel").carousel({
                 dist: 0,
@@ -407,6 +464,10 @@
                 $(".carousel.brandcarousel").carousel('prev');
             });
         })
+
+        
+
+       
         
     </script>
 </body>
