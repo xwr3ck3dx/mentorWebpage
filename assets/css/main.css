@@ -701,3 +701,7 @@ a.middle-indicator-text{
 .optionsgroupitem .collapsible-body li a:hover{
     color:#7eccdc;
 }
+
+.collapsible-header{
+    outline: none!important
+}
