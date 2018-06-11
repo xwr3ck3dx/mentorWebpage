@@ -180,12 +180,12 @@ ul.rightMainNav li a:hover{
 .mainText{
     color:#666;
     text-align: center;
-    font-size: 3em
+    font-size: 4vh
 }
 .subText{
     color:#aaaead;
     text-align: center;
-    font-size: 2.5em
+    font-size: 2.5vh
 }
 .optionsgroup{
     padding:0 30px!important
@@ -487,6 +487,11 @@ a.middle-indicator-text{
    background-color: #4d4d4d;
    border-right: solid 1px #555
 }
+@media (max-width:700px){
+    .footer .footer-top .footer-top-left .footleft{
+        width:100%;
+    }
+}
 .footer .footer-top .footer-top-left .footleft a{
     display: block;
     line-height: 5em;
@@ -502,6 +507,13 @@ a.middle-indicator-text{
     list-style: none;
     text-align: left
 }
+@media (max-width:700px){
+    .footer .footer-top .footer-top-item.footer-top-middle{
+        margin: 0 auto!important;
+        text-align: center
+    }
+
+}
 .footer-top-item.footer-top-middle li{
     padding: 1px 0;
 }
@@ -514,8 +526,9 @@ a.middle-indicator-text{
 }
 .footer-top-item.footer-top-right{
     padding-top: 40px;
-
+    padding-bottom:20px
 }
+
 .footer-top-item.footer-top-right a{
     width:30px;
     height:30px;
@@ -588,7 +601,7 @@ a.middle-indicator-text{
 }
 .categoryTitle{
     
-    font-size:3rem;
+    font-size:4vh;
     margin-bottom:20px;
     position: relative;
     z-index: 1;
@@ -627,6 +640,11 @@ a.middle-indicator-text{
         width:50%!important;
     }
 }
+@media (max-width: 500px){
+    .newCategoryShowcase .col.s2{
+        width:100%!important;
+    }
+}
 /* Product Details page */
 .productDetails{
   
@@ -641,6 +659,11 @@ a.middle-indicator-text{
 .mainProductDiv{
     padding:30px 70px;
     display: block
+}
+@media (max-width:1024px){
+    .mainProductDiv{
+        padding:30px 30px;
+    }
 }
 .mainProductDiv .col.s5 img{
     margin: 0 auto!important;
@@ -704,4 +727,20 @@ a.middle-indicator-text{
 
 .collapsible-header{
     outline: none!important
+}
+@media (max-width:700px){
+    #header .header-main .col.s4{
+        width:100%!important;
+        
+        
+    }
+    #header .header-main .col.s4 #searchbarTop{
+        padding-top:2vw;
+        padding-bottom:2vw
+    }
+    #header .header-main .col.s4 #searchbarTop .input-field{
+        margin:0 auto;
+        margin-left:0;
+        width:90%;
+    }
 }
