@@ -539,7 +539,8 @@ a.middle-indicator-text{
     background-color:#676767;
     border-radius: 20px;
     color: white;
-    vertical-align: middle
+    vertical-align: middle;
+    font-size:15px;
 }
 .footer-bottom{
     background:#424242
@@ -731,7 +732,7 @@ a.middle-indicator-text{
 @media (max-width:700px){
     #header .header-main .col.s4{
         width:100%!important;
-        
+        background-color: #077A9C
         
     }
     #header .header-main .col.s4 #searchbarTop{
@@ -740,7 +741,29 @@ a.middle-indicator-text{
     }
     #header .header-main .col.s4 #searchbarTop .input-field{
         margin:0 auto;
-        margin-left:0;
+        margin-left:5px;
         width:90%;
     }
+    .productDetails{
+        margin-top:0px
+    }
+    #enquiryForm .col.s6{
+        width:100%!important
+    }
+}
+
+#enquiryModal{
+    max-width:600px;
+    max-height:80%;
+    background-color: #fff
+}
+
+.modal-content h4{
+    text-align: center;
+    margin-bottom: 0;
+    font-size:3em
+}
+
+.right.rightnav{
+    display: none
 }
