@@ -8,10 +8,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/fa-brands.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"> -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/jquery-3.3.1.js"></script>
     <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/xzoom.min.js"></script>
+    <link rel="stylesheet" href="assets/css/xzoom.css">
 </head>
 <body>
     <!-- Start of Header -->
@@ -84,7 +88,7 @@
     <div class="productDetails z-depth-3">
         <div class="mainProductDiv  row ">
                 
-            <div class="col s5 imgContain">
+            <div class="col s5 imgContain xzoom-container">
                 <!-- <div class="col s2">
                     <img src="assets/images/p1.jpg" class="responsive-img z-depth-1" alt="" srcset="">
                     <img src="assets/images/p2.jpg" class="responsive-img z-depth-1" alt="" srcset="">
@@ -93,7 +97,7 @@
                     <img src="assets/images/p2.jpg" class="responsive-img z-depth-1" alt="" srcset="">
                     <img src="assets/images/p3.jpg" class="responsive-img z-depth-1" alt="" srcset="">
                 </div> -->
-                <img src="assets/images/p1.jpg" class="responsive-img z-depth-1" alt="" srcset="">
+                <img class="z-depth-1 xzoom" src="assets/images/thumbs/p1_small.jpg" id="xzoom-default" xoriginal="assets/images/fullsize/p1_big.jpg" alt="" srcset="">
             </div>
             <!-- <div class="col s1"></div> -->
             <div class="col s6 productDetail ">
@@ -341,6 +345,15 @@
                 $(".carousel.brandcarousel").carousel('prev');
             });
             $('.modal').modal();
+            var imgSize = $('.xzoom').width();
+            var imgWidth =$('.xzoom').outerWidth(true);
+            // console.log(imgWidth);
+            var imgOffset =imgWidth-imgSize;
+            $('.xzoom').xzoom({
+                Xoffset:imgOffset/2,
+                defaultScale:-1
+
+            });
         })
             
     </script>
